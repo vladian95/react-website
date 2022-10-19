@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Woman from '../img/woman.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -65,11 +67,15 @@ const Right = styled.div`
   width: 40%;
 `;
 
+const Image = styled.img`
+  height: 100%;
+`;
+
 const Intro = () => {
   return (
     <Container>
       <Left>
-        <Title>Adventures in creative age</Title>
+        <Title>Adventures in WEB</Title>
         <Desc>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore
           quisquam fugit ratione natus soluta, nam earum fuga aliquid, sunt
@@ -79,11 +85,14 @@ const Intro = () => {
           <Button>START A PROJECT</Button>
           <Contact>
             <Phone>Call me +48 570 628 348</Phone>
-            <ContactText>For any question or consern</ContactText>
+            <ContactText>kvankvan1995@gmail.com</ContactText>
           </Contact>
         </Info>
       </Left>
-      <Right>123</Right>
+      <Right>
+        <Image src={Woman} />
+      </Right>
+      <AnimatedShapes />
     </Container>
   );
 };

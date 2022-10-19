@@ -43,7 +43,7 @@ const Button = styled.button`
   color: white;
   font-weight: bold;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #fff;
   cursor: pointer;
 `;
 
@@ -52,7 +52,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo>Agency</Logo>
+          <Logo>Vladian95</Logo>
           <Menu>
             <MenuItem>Home</MenuItem>
             <MenuItem>Features</MenuItem>
