@@ -32,7 +32,7 @@ const FeatureShape = styled.div`
   background-color: green;
 `;
 
-const ServiceShape = styled.div`
+const PriceShape = styled.div`
   ${Shape}
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 68% 100%);
   background-color: darkblue;
@@ -55,6 +55,7 @@ function App() {
       </Container>
       <Container>
         <Price />
+        <PriceShape />
       </Container>
     </>
   );

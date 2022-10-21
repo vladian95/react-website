@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PriceCard from './PriceCard';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
   height: 100%;
@@ -12,9 +13,10 @@ const Container = styled.div`
 const Price = () => {
   return (
     <Container>
-      <PriceCard />
-      <PriceCard />
-      <PriceCard />
+      <PriceCard price="10" type="basic" />
+      <PriceCard price="20" type="premium" />
+      <PriceCard price="30" type="advanced" />
+      <AnimatedShapes />
     </Container>
   );
 };

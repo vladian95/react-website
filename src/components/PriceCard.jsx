@@ -51,13 +51,13 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const PriceCard = () => {
+const PriceCard = ({ price, type }) => {
   return (
     <Container>
       <PriceContainer>
-        $<Price>50</Price>/month
+        $<Price>{price}</Price>/month
       </PriceContainer>
-      <Type>Basic Plan</Type>
+      <Type>{type}</Type>
       <List>
         <ListItem>200 Hand-Craftes Templates</ListItem>
         <ListItem>Exclusive Support</ListItem>
