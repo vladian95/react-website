@@ -22,13 +22,45 @@ const Form = styled.form`
   justify-content: center;
 `;
 
+const LeftForm = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const RightForm = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const Input = styled.input`
+  width: 200px;
+`;
+
+const TextArea = styled.textarea`
+  width: 200px;
+  height: 60%;
+`;
+
 const AdressContainer = styled.div``;
 
 const Contact = () => {
   return (
     <Container>
       <Wrapper>
-        <FormContainer></FormContainer>
+        <FormContainer>
+          <LeftForm>
+            <Input placeholder="Your name" />
+            <Input placeholder="Your Email" />
+            <Input placeholder="Subject" />
+          </LeftForm>
+          <RightForm>
+            <TextArea placeholder="Your message" />
+          </RightForm>
+        </FormContainer>
         <AdressContainer></AdressContainer>
       </Wrapper>
     </Container>
