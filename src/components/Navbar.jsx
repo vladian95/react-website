@@ -22,7 +22,7 @@ const Left = styled.div`
 
 const Logo = styled.h1`
   text-decoration: underline crimson;
-  m10 
+  margin-right: 10px;
 `;
 
 const Menu = styled.div`
