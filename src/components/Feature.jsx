@@ -6,6 +6,9 @@ import AnimatedShapes from './AnimatedShapes';
 const Container = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 878px) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
@@ -22,10 +25,17 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 180px;
+  @media (max-width: 878px) {
+    margin-top: 80px;
+    width: 90%;
+  }
 `;
 
 const Title = styled.span`
   font-size: 70px;
+  @media (max-width: 878px) {
+    font-size: 40px;
+  }
 `;
 
 const SubTitle = styled.span`
@@ -33,12 +43,20 @@ const SubTitle = styled.span`
   font-style: italic;
   color: #333;
   margin-top: 30px;
+  @media (max-width: 878px) {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 `;
 
 const Desc = styled.p`
   font-size: 24px;
   color: #777;
   margin-top: 30px;
+  @media (max-width: 878px) {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 `;
 
 const Button = styled.button`

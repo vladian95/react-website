@@ -11,6 +11,9 @@ const Container = styled.div`
   -moz-box-shadow: 0px 1px 14px -3px rgba(66, 68, 90, 1);
   box-shadow: 0px 1px 14px -3px rgba(66, 68, 90, 1);
   border-radius: 20px;
+  @media (max-width: 516px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const Image = styled.img`

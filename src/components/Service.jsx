@@ -15,6 +15,12 @@ const Title = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 516px) {
+    margin-top: 0px;
+  }
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
 `;
 
 const SubTitle = styled.p`
@@ -23,6 +29,13 @@ const SubTitle = styled.p`
   padding: 0px 80px;
   text-align: center;
   color: #555;
+  @media (max-width: 516px) {
+    margin-top: 10px;
+  }
+  @media (max-width: 450px) {
+    margin-top: 0px;
+    font-size: 17px;
+  }
 `;
 
 const CardContainer = styled.div`
@@ -30,6 +43,14 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 90px;
+  @media (max-width: 516px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  @media (max-width: 450px) {
+    margin-top: 10px;
+  }
 `;
 
 const Button = styled.button`
@@ -44,6 +65,9 @@ const Button = styled.button`
   margin-top: 120px;
   display: flex;
   align-items: center;
+  @media (max-width: 516px) {
+    margin-top: 0px;
+  }
 `;
 
 const Icon = styled.img`

@@ -5,6 +5,7 @@ import Feature from './components/Feature';
 import Service from './components/Service';
 import Price from './components/Price';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const Container = styled.div`
   height: 100vh;
@@ -33,33 +34,49 @@ const FeatureShape = styled.div`
   background-color: green;
 `;
 
+const ServiceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(32% 0, 37% 0, 37% 100%, 32% 100%);
+
+  background-color: crimson;
+`;
+
 const PriceShape = styled.div`
   ${Shape}
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 68% 100%);
   background-color: darkblue;
 `;
 
+const ContacteShape = styled.div`
+  ${Shape}
+  clip-path: polygon(20% 0%, 68% 0, 100% 100%, 0% 100%);
+  background-color: crimson;
+`;
+
 function App() {
   return (
     <>
-      <Container>
+      <Container id="Home">
         <Navbar />
         <Intro />
         <IntoShape />
       </Container>
-      <Container>
+      <Container id="Features">
         <Feature />
         <FeatureShape />
       </Container>
-      <Container>
+      <Container id="Service">
         <Service />
+        <ServiceShape />
       </Container>
-      <Container>
+      <Container id="Price">
         <Price />
         <PriceShape />
       </Container>
-      <Container>
+      <Container id="Contact">
         <Contact />
+        <Footer />
+        <ContacteShape />
       </Container>
     </>
   );

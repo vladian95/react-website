@@ -15,6 +15,12 @@ const Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+  @media (max-width: 720px) {
+    align-items: start;
+  } ;
 `;
 
 const Title = styled.h1`
@@ -34,6 +40,10 @@ const Info = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+  @media (max-width: 1060px) {
+    flex-direction: column;
+    align-items: start;
+  } ;
 `;
 
 const Button = styled.button`
@@ -56,6 +66,9 @@ const Contact = styled.div`
 const Phone = styled.span`
   color: #f0667d;
   font-weight: bold;
+  @media (max-width: 1060px) {
+    margin-top: 20px;
+  } ;
 `;
 
 const ContactText = styled.span`
@@ -65,6 +78,9 @@ const ContactText = styled.span`
 
 const Right = styled.div`
   width: 40%;
+  @media (max-width: 720px) {
+    display: none;
+  } ;
 `;
 
 const Image = styled.img`
