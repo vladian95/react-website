@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/react-website/static/js/main.3d31177f.js",
+    "static/media/woman.png": "/react-website/static/media/woman.826535ec47e534a210b6.png",
+    "static/media/flower.png": "/react-website/static/media/flower.edfb3c7b17c494a35729.png",
+    "index.html": "/react-website/index.html",
+    "main.3d31177f.js.map": "/react-website/static/js/main.3d31177f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3d31177f.js"
+  ]
+}
